@@ -1,4 +1,4 @@
-let g:vim_brackets_pairs = {'{': '}'}
+let g:vim_brackets_pairs = {'{': '}', '[': ']'}
 
 function! s:GetCharAhead()
     if col('$') == col('.')
