@@ -27,3 +27,20 @@ if(condition) {
     |
 }
 ==============================
+
+The default supported bracket types are '[' and '{'.
+To add and remove bracket types, you can modify the g:vim_brackets_pairs variable.
+Remember:
+Key = Left Pair
+Value = Right Pair
+
+Examples:
+**ADDING**
+let g:vim_brackets_pairs = { '{': '}', '"': '"' }
+let g:vim_brackets_pairs['('] = ')'
+
+**REMOVING**
+let g:vim_brackets_pairs = remove(g:vim_brackets_pairs, '{')
+unlet g:vim_brackets_pairs['{']
+
+
