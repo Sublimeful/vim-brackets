@@ -1,3 +1,8 @@
+if exists('g:vim_brackets_loaded')
+    finish
+endif
+
+let g:vim_brackets_loaded = 1
 let g:vim_brackets_pairs = {'{': '}', '[': ']'}
 
 function! s:GetCharAhead()
@@ -25,7 +30,7 @@ function! s:Enter()
     return "\<CR>"
 endfunction
 
-inoremap <buffer> <silent> <CR>         <C-R>=<SID>Enter()<CR>
+inoremap <silent> <CR> <C-R>=<SID>Enter()<CR>
 
 
 
