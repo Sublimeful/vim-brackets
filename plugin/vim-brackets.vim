@@ -31,6 +31,3 @@ function! s:Enter()
 endfunction
 
 inoremap <silent> <CR> <C-R>=<SID>Enter()<CR>
-
-
-
