@@ -25,7 +25,7 @@ endfunction
 
 function! s:Enter()
     if s:CheckPairs(s:GetCharBehind())
-        return "\<CR>\<CR>\<Up>\<Tab>"
+        return "\<CR>\<Tab>\<BS>\<CR>\<Up>\<Tab>"
     endif
     return "\<CR>"
 endfunction
